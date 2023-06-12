@@ -1,0 +1,120 @@
+ion-header {
+    ion-toolbar {
+      --background: #35465C; 
+      --color: #FFFFFF
+    }
+  }
+  
+  ion-content {
+    .ion-padding {
+      --padding-top: 32px;
+      --padding-bottom: 32px;
+    }
+   
+    form {
+      ion-item {
+        margin-bottom: 16px;
+        --highlight-color-focused: #6A75CA; 
+        --highlight-color-invalid: #E74C3C; 
+        --highlight-color-valid: #2ECC71;
+      
+      }
+  
+      ion-label {
+        font-weight: bold;
+        color: #35465C; 
+        font-size: 20px !important;
+      }
+  
+      ion-input {
+        --border-color: #35465C; 
+        --border-radius: 8px;
+      
+    
+  
+        &:focus {
+          --border-color: #6A75CA; 
+        }
+  
+        &.ng-invalid {
+          --border-color: #E74C3C; 
+        }
+  
+        &.ng-valid {
+          --border-color: #2ECC71; 
+        }
+      }
+    }
+  
+    ion-button {
+      --background: #1029e6; 
+      --color: #FFFFFF; 
+      --border-radius: 8px;
+      margin-top: 24px;
+      
+    }
+  
+    .login-link {
+      text-align: center;
+      margin-top: 16px;
+  
+      p {
+        color: #35465C; 
+  
+        a {
+          color: #6A75CA; 
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    ion-header {
+      ion-toolbar {
+        --color: #FFFFFF; 
+      }
+    }
+  
+    ion-content {
+      form {
+        ion-item {
+          --highlight-color-activated: #222B36; 
+        }
+  
+        ion-label {
+          color: #FFFFFF; 
+        }
+  
+        ion-input {
+          --border-color: #FFFFFF; 
+           
+          --color: #FFFFFF; 
+  
+          &:focus {
+            --border-color: #6A75CA; 
+          }
+  
+          &.ng-invalid {
+            --border-color: #E74C3C; 
+          }
+  
+          &.ng-valid {
+            --border-color: #2ECC71; 
+          }
+        }
+      }
+
+      .login-link {
+        p {
+          color: #FFFFFF; 
+  
+          a {
+            color: #6A75CA; 
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  

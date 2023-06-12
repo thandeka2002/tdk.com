@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="hd">Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="login()">
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="mail"></ion-icon> Email</ion-label>
+      <ion-input [(ngModel)]="email" name="email" type="email" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="lock-closed"></ion-icon> Password</ion-label>
+      <ion-input [(ngModel)]="password" name="password" type="password" required></ion-input>
+    </ion-item>
+    
+    <ion-button expand="block" type="submit" size="large">Login</ion-button>
+  </form>
+
+  <br>
+  <div class="register-link">
+    <p>Don't have an account? <a routerLink="/register">Click here</a> to register.</p>
+  </div>
+  <div class="register-link">
+    <p>forgot password? <a routerLink="/resert-password">Click here</a> to reset.</p>
+  </div>
+
+ 
+</ion-content>
+

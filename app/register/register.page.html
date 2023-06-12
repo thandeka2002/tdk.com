@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="hd">Registration Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <form (ngSubmit)="register()">
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="person"></ion-icon> Name</ion-label>
+      <ion-input [(ngModel)]="name" name="name" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="person"></ion-icon> Surname</ion-label>
+      <ion-input [(ngModel)]="surname" name="surname" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="mail"></ion-icon> Email</ion-label>
+      <ion-input [(ngModel)]="email" name="email" type="email" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="lock-closed"></ion-icon> Password</ion-label>
+      <ion-input [(ngModel)]="password" name="password" type="password" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="lock-closed"></ion-icon> Confirm Password</ion-label>
+      <ion-input [(ngModel)]="confirmPassword" name="confirmPassword" type="password" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" size="large">Register</ion-button>
+  </form>
+
+  <div class="login-link">
+    <p>Already have an account? <a routerLink="/login">Click here</a></p>
+  </div>
+
+</ion-content>

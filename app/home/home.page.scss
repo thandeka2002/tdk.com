@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.feature-label {
+  font-weight: bold;
+}
+
+ion-item {
+  --inner-padding-end: 0;
+}
+
+ion-note {
+  font-size: 14px;
+}
